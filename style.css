@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+    grid-template-areas: 
+    
+
+    "lg lg lg sm1 sm1"
+    "lg lg lg sm2 sm2"
+    "sm3 sm3 lg1 lg1 lg1"
+    "sm4 sm4 lg1 lg1 lg1"
+
+    ;
+
+    gap: 20px;
+}
+
+.item {
+    min-width: 190px;
+    font-size: 50px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.lg {
+    background-color: blue;
+    grid-area: lg;
+}
+
+.lg1 {
+    background-color: blue;
+    grid-area: lg1;
+}
+
+.sm1 {
+    background-color: yellow;
+    grid-area: sm1;
+}
+
+.sm2 {
+    background-color: green;
+    grid-area: sm2;
+}
+
+.sm3 {
+    background-color: green;
+    grid-area: sm3;
+}
+
+.sm4 {
+    background-color: yellow;
+    grid-area: sm4;
+}
